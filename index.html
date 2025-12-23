@@ -69,30 +69,45 @@ body{
     font-size:13px;
     color:#777;
 }
-    @media (max-width: 600px){
+   @media (max-width: 600px){
+  body{
+    display:flex;
+    justify-content:center;   /* PAGE CENTER */
+  }
+
   .container{
-    margin:15px;
+    width:100%;
+    max-width:95%;
+    margin:15px auto;         /* CENTER */
   }
+
   .header{
-    flex-direction:column;
-    align-items:flex-start;
+    flex-direction:row;       /* logo + text side by side */
+    align-items:center;
   }
+
   .header img{
     height:45px;
   }
+
   .header-text h2{
     font-size:22px;
   }
+
   .row{
     flex-direction:column;
   }
+
   .label, .value{
     width:100%;
+    text-align:left;          /* TEXT LEFT */
   }
+
   .label{
     margin-bottom:4px;
   }
 }
+
 
 </style>
 </head>
@@ -159,4 +174,5 @@ body{
 
 </body>
 </html>
+
 
