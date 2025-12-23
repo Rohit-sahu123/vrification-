@@ -69,20 +69,24 @@ body{
     font-size:13px;
     color:#777;
 }
-   @media (max-width: 600px){
+@media (max-width: 600px){
+
   body{
+    min-height:100vh;              /* FULL SCREEN HEIGHT */
     display:flex;
-    justify-content:center;   /* PAGE CENTER */
+    justify-content:center;        /* HORIZONTAL CENTER */
+    align-items:center;            /* VERTICAL CENTER */
+    background:#f2f4f7;
   }
 
   .container{
     width:100%;
     max-width:95%;
-    margin:15px auto;         /* CENTER */
+    margin:0;                      /* TOP SPACE हटेगा */
   }
 
   .header{
-    flex-direction:row;       /* logo + text side by side */
+    flex-direction:row;
     align-items:center;
   }
 
@@ -100,14 +104,14 @@ body{
 
   .label, .value{
     width:100%;
-    text-align:left;          /* TEXT LEFT */
+    text-align:left;
   }
 
   .label{
     margin-bottom:4px;
   }
 }
-
+   
 
 </style>
 </head>
@@ -174,5 +178,6 @@ body{
 
 </body>
 </html>
+
 
 
