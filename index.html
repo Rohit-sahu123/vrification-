@@ -70,25 +70,22 @@ body{
     color:#777;
 }
 @media (max-width: 600px){
-
   body{
-    background:#f2f4f7;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;   /* ⚠️ scroll बंद */
   }
 
   .container{
+    height:90vh;
+    overflow:auto;     /* अंदर scroll */
     width:95%;
-    margin:20px auto;   /* top spacing */
-  }
-
-  .row{
-    flex-direction:column;
-  }
-
-  .label, .value{
-    width:100%;
-    text-align:left;
+    margin:0;
   }
 }
+
 
 
 </style>
@@ -156,6 +153,7 @@ body{
 
 </body>
 </html>
+
 
 
 
