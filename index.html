@@ -72,18 +72,19 @@ body{
 @media (max-width: 600px){
 
   body{
-    min-height:100vh;              /* FULL SCREEN HEIGHT */
+    height:100vh;              /* FULL SCREEN HEIGHT */
     display:flex;
     justify-content:center;        /* HORIZONTAL CENTER */
     align-items:center;            /* VERTICAL CENTER */
     background:#f2f4f7;
   }
 
-  .container{
-    width:100%;
-    max-width:95%;
-    margin:0;                      /* TOP SPACE हटेगा */
-  }
+.container{
+  width:100%;
+  max-width:95%;
+  margin:0 !important;
+}
+
 
   .header{
     flex-direction:row;
@@ -178,6 +179,7 @@ body{
 
 </body>
 </html>
+
 
 
 
